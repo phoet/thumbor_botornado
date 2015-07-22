@@ -1,6 +1,6 @@
 import thumbor_botornado.s3_loader as S3Loader
-import tornado.concurrent.return_future
 import thumbor.loaders.http_loader as HttpLoader
+from tornado.concurrent import return_future
 import re
 
 HTTP_RE = re.compile(r'\Ahttps?:', re.IGNORECASE)
